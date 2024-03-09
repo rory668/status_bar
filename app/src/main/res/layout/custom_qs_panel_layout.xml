@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene">
+
+<RelativeLayout
+    android:id="@+id/cardView_gear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="8dp"
+    android:layout_centerHorizontal="true">
+            <!-- Contents of flayout1 -->
+    <RelativeLayout
+        android:id="@+id/cardView_gearn"
+        android:background="@color/semi_transparent_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        
+        <RelativeLayout
+            android:id="@+id/toolbar_gear"
+            android:paddingTop="120dp"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:paddingBottom="6dp"
+            android:background="#01a5c3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+            
+            <RelativeLayout
+                android:id="@+id/panel_clock_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <!-- Left side views -->
+                <TextView
+                    android:textSize="32sp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/panel_clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:48"
+                    android:layout_marginStart="12dp"
+                    android:singleLine="true"/>
+
+                <!-- Right side views -->
+
+                <TextView
+                    android:id="@+id/panel_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/panel_clock"
+                    android:singleLine="true"
+                    android:text="Fri, April 3"
+                    android:textColor="#cdffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/panel_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginEnd="12dp"
+                    android:paddingTop="8dp"
+                    android:layout_toEndOf="@+id/panel_date"
+                    android:gravity="end"
+                    android:text="@string/edit"
+                    android:textStyle="bold|normal"
+                    android:textColor="#cdffffff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/panel_settings"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_settings_white_24dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_toEndOf="@+id/panel_edit"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/semi_transparent_color"
+        android:layout_below="@+id/cardView_gearn"
+        android:orientation="vertical">
+
+        <include layout="@layout/flayout2"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>
+

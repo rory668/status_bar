@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_status_bar_height">32dp</dimen>
+    <dimen name="custom_status_bar_initial_width">100dp</dimen>
+    <dimen name="system_status_bar_height_common">32dp</dimen>
+    <dimen name="panel_good_icon">28dp</dimen>
+    <dimen name="panel_profile">24dp</dimen>
+    <dimen name="panel_stock_icon">32dp</dimen>
+    <dimen name="panel_tw_icon">48dp</dimen>
+    <!-- Move distance for the unlock hint animation on the lockscreen -->
+    <dimen name="hint_move_distance">75dp</dimen>
+    <dimen name="keyguard_drag_down_min_distance">100dp</dimen>
+    <!-- How far the expanded QS panel peeks from the header in collapsed state. -->
+    <dimen name="qs_peek_height">0dp</dimen>
+    <!-- Distance between notifications and header when they are considered to be colliding. -->
+    <dimen name="header_notifications_collide_distance">48dp</dimen>
+    <!-- Distance after which the scrim starts fading in when dragging down the quick settings -->
+    <dimen name="notification_scrim_wait_distance">100dp</dimen>
+    <!-- Minimum margin of the notification panel on the side, when being positioned dynamically -->
+    <dimen name="notification_panel_min_side_margin">48dp</dimen>
+    <!-- Width for the notification panel and related windows -->
+    <dimen name="match_parent">-1px</dimen>
+    <dimen name="standard_notification_panel_width">416dp</dimen>
+    <dimen name="notification_panel_width">@dimen/match_parent</dimen>
+    <integer name="notification_panel_layout_gravity">0x37</integer><!-- fill_horizontal|top -->
+</resources>

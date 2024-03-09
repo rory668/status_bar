@@ -1,0 +1,17 @@
+<!-- Extends Framelayout -->
+<com.studio.statusbar.EmptyShadeView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    <TextView
+            android:id="@+id/no_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingTop="28dp"
+            android:gravity="top|center_horizontal"
+            android:textColor="#e6ffffff"
+            android:textSize="16sp"
+            android:text="No notifications"/>
+</com.studio.statusbar.EmptyShadeView>

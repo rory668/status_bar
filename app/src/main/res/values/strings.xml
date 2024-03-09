@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">StatusBar</string>
+    <string name="enable_service">Enable service</string>
+    <string name="quick_settings">Quick Settings</string>
+    <string name="accessibility_service_description_summary">Allows the app to create a custom StatusBar(Transparent) overlay on the top of system StatusBar.</string>
+    <string name="accessibility_service_description">This service allows the use of custom shade by sliding down from the top of the screen. No data is stored on the device or sent over the internet. Usages are explained below. \n\n Permissions: \n\n - Observe your actions: Receives a response from the system when the top of the screen is touched to trigger the shade. \n\n - Retrieve window content: Required for automatic clicking of some settings after the user chooses they want to toggle them in the app-provided interface</string>
+    <string name="perm_modify_system_settings">Allow Write</string>
+    <string name="perm_display_over_apps">Allow Display Over Other Apps</string>
+    <string name="wifi">WiFi</string>
+    <string name="location">Location</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="sound">Sound</string>
+    <string name="rotation">Screen Rotation</string>
+    <string name="airplane">Airplane Mode</string>
+    <string name="data">Mobile Data</string>
+    <string name="timeout">Screen Timeout</string>
+    <string name="edit">EDIT</string>
+    <string name="auto">Auto</string>
+    <string name="permissions">Permissions</string>
+    <string name="accessibility_desc_quick_settings">Quick settings.</string>
+    <string name="accessibility_desc_quick_settings_edit">Quick settings editor.</string>
+</resources>

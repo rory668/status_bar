@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never">
+  
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_wifi"
+            android:paddingRight="8dp"
+            android:paddingLeft="6dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_wifi"
+                android:background="@drawable/circle_bg"
+                android:padding="10dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_signal_wifi_4_bar_white_48dp"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/wifi"
+                android:maxLines="5"/>
+        </LinearLayout>
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_gps"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_gps"
+                android:background="@drawable/circle_bg"
+                android:padding="10dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_map_marker_white_48dp"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/location"
+                android:maxLines="5"/>
+        </LinearLayout>
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_ringer"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_ringer"
+                android:background="@drawable/circle_bg"
+                android:padding="10dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_volume_high_white_48dp"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/panel_ringer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/sound"
+                android:maxLines="5"/>
+        </LinearLayout>
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_rotate"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_rotate"
+                android:background="@drawable/circle_bg"
+                android:padding="10dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_screen_rotation_white_48dp"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/rotation"
+                android:maxLines="5"/>
+        </LinearLayout>
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_bluetooth"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_bluetooth"
+                android:background="@drawable/circle_bg"
+                android:padding="10dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_bluetooth_white_48dp"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/bluetooth"
+                android:maxLines="5"/>
+        </LinearLayout>
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_flash"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_flash"
+                android:background="@drawable/circle_bg"
+                android:padding="10dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_panel_flashlight_on"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Flashlight"
+                android:maxLines="5"/>
+        </LinearLayout>
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_airplane"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_airplane"
+                android:background="@drawable/circle_bg"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_airplane_white_48dp"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/airplane"
+                android:maxLines="5"/>
+        </LinearLayout>
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_mobile_data"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_mobile_data"
+                android:background="@drawable/circle_bg"
+                android:padding="8dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_swap_vertical_white_48dp"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/data"
+                android:maxLines="5"/>
+        </LinearLayout>
+      
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/layout_timeout"
+            android:paddingLeft="8dp"
+            android:paddingRight="6dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+          
+            <ImageView
+                android:id="@+id/panel_timeout"
+                android:background="@drawable/circle_bg"
+                android:padding="8dp"
+                android:layout_width="@dimen/panel_tw_icon"
+                android:layout_height="@dimen/panel_tw_icon"
+                android:focusable="true"
+                android:clickable="true"
+                android:src="@drawable/ic_clock_white_48dp"/>
+          
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/panel_timeout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/timeout"
+                android:maxLines="5"/>
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

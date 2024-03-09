@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.studio.statusbar.panel.NotificationPanelView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notification_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <com.studio.statusbar.panel.NotificationsQuickSettingsContainer
+        android:id="@+id/notification_container_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <com.studio.statusbar.AutoReinflateContainer
+            android:id="@+id/qs_auto_reinflate_container"
+            android:layout="@layout/custom_qs_panel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:clipToPadding="false"
+            android:clipChildren="false" />
+
+        <com.studio.statusbar.stack.NotificationStackScrollLayout
+            android:id="@+id/notification_stack_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="32dp" />
+
+    </com.studio.statusbar.panel.NotificationsQuickSettingsContainer>
+</com.studio.statusbar.panel.NotificationPanelView>

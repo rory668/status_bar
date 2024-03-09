@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeLayout">
+        <attr name="swipe">
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+        </attr>
+
+        <attr name="swipeView" format="reference" />
+        <attr name="swipeSnapRatio" format="float" />
+        <attr name="swipeMinFlingDistance" format="dimension" />
+        <attr name="swipeMinFlingVelocity" format="integer" />
+        <attr name="swipeAnimationDuration" format="integer" />
+
+        <attr name="swipe_constraintStart_toStartOf" format="reference" />
+        <attr name="swipe_constraintStart_toEndOf" format="reference" />
+        <attr name="swipe_constraintEnd_toStartOf" format="reference" />
+        <attr name="swipe_constraintEnd_toEndOf" format="reference" />
+        <attr name="swipe_constraintTop_toTopOf" format="reference" />
+        <attr name="swipe_constraintTop_toBottomOf" format="reference" />
+        <attr name="swipe_constraintBottom_toTopOf" format="reference" />
+        <attr name="swipe_constraintBottom_toBottomOf" format="reference" />
+        <attr name="swipe_constraintStart_maxLayoutOffset" format="dimension" />
+        <attr name="swipe_constraintEnd_maxLayoutOffset" format="dimension" />
+        <attr name="swipe_constraintTop_maxLayoutOffset" format="dimension" />
+        <attr name="swipe_constraintBottom_maxLayoutOffset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StatusBarWindowView_Layout">
+        <attr name="ignoreRightInset" format="boolean" />
+
+</resources>
